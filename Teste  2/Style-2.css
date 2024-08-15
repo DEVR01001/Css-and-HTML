@@ -1,0 +1,78 @@
+/* Menu */
+
+*{
+    margin: 0;
+}
+
+body{
+    background-color: white;
+    gap: 10px;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    background-color: grey;
+    height: 100px;
+    flex-direction: row-reverse;
+}
+
+
+header nav{
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    margin-left: 50%;
+
+}
+
+header nav ul{
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    align-items: center;
+
+}
+
+header nav ul li{
+    display: flex;
+    width: 100%;
+}
+
+header nav ul li a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    justify-content: space-between;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 50px;
+    font-size: 14px;
+}
+
+
+header :hover{
+    color: black;
+}
+
+/* Sub Menu */
+
+
+nav ul ul{
+    display: none;
+    left: 50;
+    position: absolute;
+}
+
+nav ul li:hover ul{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    margin-top: 70px;
+    align-items: center;
+}
+nav ul ul{
+    width: 155px;
+    background-color: grey;
+    padding: 10px;
+}
